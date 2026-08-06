@@ -64,6 +64,9 @@ if !head or !head->next: return head
 TEST CASE:
 
 */
+/*
+42:45
+*/
 
 
 class Solution {
@@ -88,7 +91,7 @@ public:
             // prev->next->next->next = next_node;// BUG[LOGIC] curr->next->next = 1 not 3
             // curr = next_node;
             // prev = prev->next->next;
-            
+
         //     next_node = (curr->next) ? curr->next->next: nullptr;
         //     prev->next = curr->next; //dummy->2
         //     // cout << dummy->next->val;
