@@ -141,7 +141,6 @@ def generate_markdown_report():
             
             if actual_path:
                 topic_progress += 1
-                total_solved_or_attempted += 1
                 
                 # 取得狀態與筆記
                 status, notes = check_file_metadata(actual_path)
@@ -160,6 +159,7 @@ def generate_markdown_report():
                 elif status == "STUCK":
                     topic_table_lines.append(f"| 🛑 **Stuck** | {problem} | {notes_html} |")
                 else:
+                    total_solved_or_attempted += 1
                     topic_table_lines.append(f"| ✅ **Solved** | {problem} | {notes_html} |")
             else:
                 topic_table_lines.append(f"| ⬜ Pending | {problem} | - |")
