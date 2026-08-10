@@ -14,7 +14,7 @@
 ---
 
 ## 🏆 Global Progress
-> **Overall:** `[██████░░░░░░░░░░░░░░]` **29%** (22/75)
+> **Overall:** `[███████░░░░░░░░░░░░░]` **33%** (25/75)
 ---
 
 ### 📁 Arrays
@@ -186,11 +186,11 @@
 
 
 ### 📁 Tree Traversal - Level Order
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/2)
+> **Progress:** `[█████░░░░░]` **50%** (1/2)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Binary Tree Level Order Traversal | - |
+| 🎯 **Active** | Binary Tree Level Order Traversal | - |
 | ⬜ Pending | Binary Tree Right Side View | - |
 
 
@@ -342,27 +342,27 @@
 
 
 ### 📁 1-D DP
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
+> **Progress:** `[██████████]` **100%** (1/1)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | House Robber II | - |
+| ✅ **Solved** | House Robber II | - |
 
 
 ### 📁 0-1 Knapsack
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
+> **Progress:** `[██████████]` **100%** (1/1)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Partition Equal Subset Sum | - |
+| ✅ **Solved** | Partition Equal Subset Sum | 💡 DP!!! I thougt backtracking at first time!<br>💡 [BUG] [1,2,5], expected false, got true [WHY] need to add prev to prevent from using the same data<br>💡 I need to add program to check my answer! |
 
 
 ### 📁 Unbounded Knapsack
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
+> **Progress:** `[██████████]` **100%** (1/1)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Coin Change | - |
+| ✅ **Solved** | Coin Change | - |
 
 
 ### 📁 Longest Increasing Subsequence (LIS)

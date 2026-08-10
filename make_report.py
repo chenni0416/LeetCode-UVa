@@ -80,7 +80,8 @@ def check_file_metadata(filepath):
                 
                 # 2. 擷取 Notes
                 # 只要開頭是 // Note: 或 // Notes: 就抓取冒號後面的文字
-                if upper_line.startswith("// NOTE:") or upper_line.startswith("// NOTES:"):
+                # if upper_line.startswith("// NOTE:") or upper_line.startswith("// NOTES:"):
+                if "NOTE" in upper_line:
                     # 用第一個冒號進行分割，保留原始大小寫與文字
                     parts = stripped_line.split(":", 1)
                     if len(parts) > 1:
