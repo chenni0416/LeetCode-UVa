@@ -1,9 +1,8 @@
-//status: 
-//Notes: 
+//status: Solved
+//Notes: My solution is slower, but I use the same algo as faster one. 
 
 
 /*
-
 
 */
 #include <bits/stdc++.h>

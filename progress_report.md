@@ -14,7 +14,7 @@
 ---
 
 ## 🏆 Global Progress
-> **Overall:** `[███████░░░░░░░░░░░░░]` **33%** (25/75)
+> **Overall:** `[████████░░░░░░░░░░░░]` **40%** (30/75)
 ---
 
 ### 📁 Arrays
@@ -195,31 +195,31 @@
 
 
 ### 📁 Tree Traversal - Pre Order
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/3)
+> **Progress:** `[███░░░░░░░]` **33%** (1/3)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Binary Tree Preorder Traversal | - |
+| ✅ **Solved** | Binary Tree Preorder Traversal | - |
 | ⬜ Pending | Path Sum III | - |
 | ⬜ Pending | Serialize and Deserialize Binary Tree | - |
 
 
 ### 📁 Tree Traversal - In Order
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/3)
+> **Progress:** `[███░░░░░░░]` **33%** (1/3)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Binary Tree Inorder Traversal | - |
+| ✅ **Solved** | Binary Tree Inorder Traversal | - |
 | ⬜ Pending | Validate Binary Search Tree | - |
 | ⬜ Pending | Kth Smallest Element in a BST | - |
 
 
 ### 📁 Tree Traversal - Post-Order
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/3)
+> **Progress:** `[███░░░░░░░]` **33%** (1/3)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Binary Tree Postorder Traversal | - |
+| ✅ **Solved** | Binary Tree Postorder Traversal | - |
 | ⬜ Pending | Lowest Common Ancestor of a Binary Tree | - |
 | ⬜ Pending | Binary Tree Maximum Path Sum | - |
 
@@ -346,7 +346,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ✅ **Solved** | House Robber II | - |
+| ✅ **Solved** | House Robber II | 💡 My solution is slower, but I use the same algo as faster one. |
 
 
 ### 📁 0-1 Knapsack
@@ -366,19 +366,19 @@
 
 
 ### 📁 Longest Increasing Subsequence (LIS)
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
+> **Progress:** `[██████████]` **100%** (1/1)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Longest Increasing Subsequence | - |
+| ✅ **Solved** | Longest Increasing Subsequence | 💡 slow but dp |
 
 
 ### 📁 2D Grid DP
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/2)
+> **Progress:** `[█████░░░░░]` **50%** (1/2)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Minimum Path Sum | - |
+| ✅ **Solved** | Minimum Path Sum | 💡 [[1], [2]] can not reach from left; only from top; |
 | ⬜ Pending | Longest Increasing Path in a Matrix | - |
 
 
