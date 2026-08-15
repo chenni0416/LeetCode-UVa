@@ -32,7 +32,7 @@ topics = {
     "K-Way Merge": ["Merge k Sorted Lists"],
     "Data Structure Design": ["LRU Cache"],
     "Greedy": ["Jump Game II"],
-    "Depth First Search (DFS)": ["Number of Islands", "Clone Graph", "Is Graph Bipartite?"],
+    "Depth First Search (DFS)": ["Number of Islands", "Clone Graph", "Is Graph Bipartite"],
     "Breadth First Search (BFS)": ["Rotting Oranges", "Word Ladder"],
     "Topological Sort": ["Course Schedule II"],
     "Union Find": ["Number of Provinces"],

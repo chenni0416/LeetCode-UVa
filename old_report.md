@@ -14,7 +14,7 @@
 ---
 
 ## 🏆 Global Progress
-> **Overall:** `[██████████░░░░░░░░░░]` **50%** (38/75)
+> **Overall:** `[█████████░░░░░░░░░░░]` **44%** (33/75)
 ---
 
 ### 📁 Arrays
@@ -22,9 +22,9 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Majority Element | - |
+| ⬜ Easy | Majority Element | - |
 | ✅ **Solved** | Product of Array Except Self | - |
-| ⬜ Pending | First Missing Positive | - |
+| ⬜ Hard | First Missing Positive | - |
 
 
 ### 📁 Strings
@@ -32,17 +32,17 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Is Subsequence | - |
+| ⬜ Easy | Is Subsequence | - |
 | ✅ **Solved** | Reverse Words in a String | - |
 
 
 ### 📁 Bit Manipulation
-> **Progress:** `[█████░░░░░]` **50%** (1/2)
+> **Progress:** `[░░░░░░░░░░]` **0%** (0/2)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Counting Bits | - |
-| ✅ **Solved** | Single Number III | - |
+| ⬜ Easy | Counting Bits | - |
+| ⬜ Medium | Single Number III | - |
 
 
 ### 📁 Hash Tables
@@ -61,7 +61,7 @@
 | :--- | :--- | :--- |
 | ✅ **Solved** | Container With Most Water | - |
 | 🛑 **Stuck** | 3Sum | 💡 So difficult |
-| ⬜ Pending | Trapping Rain Water | - |
+| ⬜ Hard | Trapping Rain Water | - |
 
 
 ### 📁 Prefix Sum
@@ -87,7 +87,7 @@
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
 | ✅ **Solved** | Longest Substring Without Repeating Characters | - |
-| ⬜ Pending | Minimum Window Substring | - |
+| ⬜ Hard | Minimum Window Substring | - |
 
 
 ### 📁 Kadane's Algorithm
@@ -122,7 +122,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Reverse Nodes in k-Group | - |
+| ⬜ Hard | Reverse Nodes in k-Group | - |
 
 
 ### 📁 Fast and Slow Pointers
@@ -138,7 +138,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Valid Parentheses | - |
+| ⬜ Easy | Valid Parentheses | - |
 | ✅ **Solved** | Min Stack | - |
 
 
@@ -147,7 +147,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Largest Rectangle in Histogram | - |
+| ⬜ Hard | Largest Rectangle in Histogram | - |
 
 
 ### 📁 Monotonic Queue
@@ -155,7 +155,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Sliding Window Maximum | - |
+| ⬜ Hard | Sliding Window Maximum | - |
 
 
 ### 📁 QuickSort - QuickSelect
@@ -173,7 +173,7 @@
 | :--- | :--- | :--- |
 | ✅ **Solved** | Find First and Last Position of Element in Sorted Array | - |
 | ✅ **Solved** | Search in Rotated Sorted Array | - |
-| ⬜ Pending | Median of Two Sorted Arrays | - |
+| ⬜ Hard | Median of Two Sorted Arrays | - |
 
 
 ### 📁 Backtracking
@@ -191,7 +191,7 @@
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
 | 🎯 **Active** | Binary Tree Level Order Traversal | - |
-| ⬜ Pending | Binary Tree Right Side View | - |
+| ⬜ Medium | Binary Tree Right Side View | - |
 
 
 ### 📁 Tree Traversal - Pre Order
@@ -200,8 +200,8 @@
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
 | ✅ **Solved** | Binary Tree Preorder Traversal | - |
-| ⬜ Pending | Path Sum III | - |
-| ⬜ Pending | Serialize and Deserialize Binary Tree | - |
+| ⬜ Medium | Path Sum III | - |
+| ⬜ Hard | Serialize and Deserialize Binary Tree | - |
 
 
 ### 📁 Tree Traversal - In Order
@@ -210,8 +210,8 @@
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
 | ✅ **Solved** | Binary Tree Inorder Traversal | - |
-| ⬜ Pending | Validate Binary Search Tree | - |
-| ⬜ Pending | Kth Smallest Element in a BST | - |
+| ⬜ Medium | Validate Binary Search Tree | - |
+| ⬜ Medium | Kth Smallest Element in a BST | - |
 
 
 ### 📁 Tree Traversal - Post-Order
@@ -220,8 +220,8 @@
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
 | ✅ **Solved** | Binary Tree Postorder Traversal | - |
-| ⬜ Pending | Lowest Common Ancestor of a Binary Tree | - |
-| ⬜ Pending | Binary Tree Maximum Path Sum | - |
+| ⬜ Medium | Lowest Common Ancestor of a Binary Tree | - |
+| ⬜ Hard | Binary Tree Maximum Path Sum | - |
 
 
 ### 📁 BST - Ordered Set
@@ -229,7 +229,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | My Calendar I | - |
+| ⬜ Medium | My Calendar I | - |
 
 
 ### 📁 Tries
@@ -237,8 +237,8 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Implement Trie (Prefix Tree) | - |
-| ⬜ Pending | Word Search II | - |
+| ⬜ Medium | Implement Trie (Prefix Tree) | - |
+| ⬜ Hard | Word Search II | - |
 
 
 ### 📁 Two Heaps
@@ -246,7 +246,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Find Median from Data Stream | - |
+| ⬜ Hard | Find Median from Data Stream | - |
 
 
 ### 📁 Top K Elements
@@ -254,7 +254,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Top K Frequent Elements | - |
+| ⬜ Medium | Top K Frequent Elements | - |
 
 
 ### 📁 Intervals
@@ -262,8 +262,8 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Merge Intervals | - |
-| ⬜ Pending | Non-overlapping Intervals | - |
+| ⬜ Medium | Merge Intervals | - |
+| ⬜ Medium | Non-overlapping Intervals | - |
 
 
 ### 📁 K-Way Merge
@@ -271,7 +271,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Merge k Sorted Lists | - |
+| ⬜ Hard | Merge k Sorted Lists | - |
 
 
 ### 📁 Data Structure Design
@@ -279,7 +279,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | LRU Cache | - |
+| ⬜ Medium | LRU Cache | - |
 
 
 ### 📁 Greedy
@@ -287,7 +287,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Jump Game II | - |
+| ⬜ Medium | Jump Game II | - |
 
 
 ### 📁 Depth First Search (DFS)
@@ -301,12 +301,12 @@
 
 
 ### 📁 Breadth First Search (BFS)
-> **Progress:** `[█████░░░░░]` **50%** (1/2)
+> **Progress:** `[░░░░░░░░░░]` **0%** (0/2)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ✅ **Solved** | Rotting Oranges | - |
-| ⬜ Pending | Word Ladder | - |
+| ⬜ Pending | Rotting Oranges | - |
+| ⬜ Hard | Word Ladder | - |
 
 
 ### 📁 Topological Sort
@@ -314,7 +314,7 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Course Schedule II | - |
+| ⬜ Medium | Course Schedule II | - |
 
 
 ### 📁 Union Find
@@ -322,23 +322,23 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Number of Provinces | - |
+| ⬜ Medium | Number of Provinces | - |
 
 
 ### 📁 Minimum Spanning Tree
-> **Progress:** `[██████████]` **100%** (1/1)
+> **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ✅ **Solved** | Min Cost to Connect All Points | - |
+| ⬜ Medium | Min Cost to Connect All Points | - |
 
 
 ### 📁 Shortest Path
-> **Progress:** `[██████████]` **100%** (1/1)
+> **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ✅ **Solved** | Cheapest Flights Within K Stops | - |
+| ⬜ Medium | Cheapest Flights Within K Stops | - |
 
 
 ### 📁 1-D DP
@@ -379,16 +379,16 @@
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
 | ✅ **Solved** | Minimum Path Sum | 💡 [[1], [2]] can not reach from left; only from top; |
-| ⬜ Pending | Longest Increasing Path in a Matrix | - |
+| ⬜ Hard | Longest Increasing Path in a Matrix | - |
 
 
 ### 📁 String DP
-> **Progress:** `[█████░░░░░]` **50%** (1/2)
+> **Progress:** `[░░░░░░░░░░]` **0%** (0/2)
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ✅ **Solved** | Longest Common Subsequence | - |
-| ⬜ Pending | Word Break | - |
+| ⬜ Medium | Longest Common Subsequence | - |
+| ⬜ Medium | Word Break | - |
 
 
 ### 📁 Maths - Geometry
@@ -396,6 +396,6 @@
 
 | Status | Problem | Notes / Takeaways |
 | :--- | :--- | :--- |
-| ⬜ Pending | Reverse Integer | - |
-| ⬜ Pending | Max Points on a Line | - |
+| ⬜ Medium | Reverse Integer | - |
+| ⬜ Hard | Max Points on a Line | - |
 
