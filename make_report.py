@@ -47,6 +47,54 @@ topics = {
     "Maths - Geometry": ["Reverse Integer", "Max Points on a Line"]
 }
 
+# 建立難度對應字典
+difficulty_map = {
+    "Majority Element": "Easy", "Product of Array Except Self": "Medium", "First Missing Positive": "Hard",
+    "Is Subsequence": "Easy", "Reverse Words in a String": "Medium",
+    "Counting Bits": "Easy", "Single Number III": "Medium",
+    "Group Anagrams": "Medium", "Longest Consecutive Sequence": "Medium",
+    "Container With Most Water": "Medium", "3Sum": "Medium", "Trapping Rain Water": "Hard",
+    "Subarray Sum Equals K": "Medium",
+    "Find All Anagrams in a String": "Medium", "Permutation in String": "Medium",
+    "Longest Substring Without Repeating Characters": "Medium", "Minimum Window Substring": "Hard",
+    "Maximum Subarray": "Medium",
+    "Spiral Matrix": "Medium", "Rotate Image": "Medium",
+    "Remove Nth Node From End of List": "Medium", "Swap Nodes in Pairs": "Medium", "Add Two Numbers": "Medium",
+    "Reverse Nodes in k-Group": "Hard",
+    "Linked List Cycle II": "Medium",
+    "Valid Parentheses": "Easy", "Min Stack": "Medium",
+    "Largest Rectangle in Histogram": "Hard",
+    "Sliding Window Maximum": "Hard",
+    "Sort Colors": "Medium",
+    "Find First and Last Position of Element in Sorted Array": "Medium", "Search in Rotated Sorted Array": "Medium", "Median of Two Sorted Arrays": "Hard",
+    "Permutations": "Medium", "Subsets": "Medium",
+    "Binary Tree Level Order Traversal": "Medium", "Binary Tree Right Side View": "Medium",
+    "Binary Tree Preorder Traversal": "Easy", "Path Sum III": "Medium", "Serialize and Deserialize Binary Tree": "Hard",
+    "Binary Tree Inorder Traversal": "Easy", "Validate Binary Search Tree": "Medium", "Kth Smallest Element in a BST": "Medium",
+    "Binary Tree Postorder Traversal": "Easy", "Lowest Common Ancestor of a Binary Tree": "Medium", "Binary Tree Maximum Path Sum": "Hard",
+    "My Calendar I": "Medium",
+    "Implement Trie (Prefix Tree)": "Medium", "Word Search II": "Hard",
+    "Find Median from Data Stream": "Hard",
+    "Top K Frequent Elements": "Medium",
+    "Merge Intervals": "Medium", "Non-overlapping Intervals": "Medium",
+    "Merge k Sorted Lists": "Hard",
+    "LRU Cache": "Medium",
+    "Jump Game II": "Medium",
+    "Number of Islands": "Medium", "Clone Graph": "Medium", "Is Graph Bipartite": "Medium",
+    "Rotting Oranges": "Medium", "Word Ladder": "Hard",
+    "Course Schedule II": "Medium",
+    "Number of Provinces": "Medium",
+    "Min Cost to Connect All Points": "Medium",
+    "Cheapest Flights Within K Stops": "Medium",
+    "House Robber II": "Medium",
+    "Partition Equal Subset Sum": "Medium",
+    "Coin Change": "Medium",
+    "Longest Increasing Subsequence": "Medium",
+    "Minimum Path Sum": "Medium", "Longest Increasing Path in a Matrix": "Hard",
+    "Longest Common Subsequence": "Medium", "Word Break": "Medium",
+    "Reverse Integer": "Medium", "Max Points on a Line": "Hard"
+}
+
 def get_progress_bar(solved, total, length=10):
     """回傳文字版進度條"""
     if total == 0:
@@ -56,9 +104,10 @@ def get_progress_bar(solved, total, length=10):
     return "`[" + "█" * filled + "░" * (length - filled) + "]`"
 
 def check_file_metadata(filepath):
-    """打開檔案讀取前 30 行，判斷 Status 與擷取 Notes"""
+    """打開檔案讀取前 30 行，判斷 Status 並擷取 Notes 與 Wrong Testcases"""
     status = "SOLVED" # 預設狀態
     notes = []
+    wrong_cases = []
     
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -79,24 +128,37 @@ def check_file_metadata(filepath):
                     status = "STUCK"
                 
                 # 2. 擷取 Notes
-                # 只要開頭是 // Note: 或 // Notes: 就抓取冒號後面的文字
-                # if upper_line.startswith("// NOTE:") or upper_line.startswith("// NOTES:"):
                 if "NOTE" in upper_line:
-                    # 用第一個冒號進行分割，保留原始大小寫與文字
                     parts = stripped_line.split(":", 1)
                     if len(parts) > 1:
                         note_content = parts[1].strip()
                         if note_content:
                             notes.append(note_content)
                             
-        return status, notes
+                # 3. 擷取錯誤測資 (Wrong Testcases / Fails)
+                if "BUG" in upper_line:
+                    parts = stripped_line.split(":", 1)
+                    if len(parts) > 1:
+                        wrong_content = parts[1].strip()
+                        if wrong_content:
+                            wrong_cases.append(wrong_content)
+                            
+        return status, notes, wrong_cases
     except Exception:
-        return "SOLVED", []
+        return "SOLVED", [], []
 
 def generate_markdown_report():
     base_dir = os.getcwd()
+    
+    # 統計全域進度與難度進度
     total_problems = 0
     total_solved_or_attempted = 0
+    
+    difficulty_stats = {
+        "Easy": {"total": 0, "solved": 0},
+        "Medium": {"total": 0, "solved": 0},
+        "Hard": {"total": 0, "solved": 0}
+    }
     
     md_lines = []
     
@@ -113,9 +175,10 @@ def generate_markdown_report():
     md_lines.append("| 🛑 **Stuck**  | `// Status: STUCK` | Couldn't solve, needs deep study. |")
     md_lines.append("| ⬜ **Pending**| *(No File)* | Not started yet. |\n")
     
-    md_lines.append("> 💡 **How to add notes**: Add `// Note: Your text here` at the top of your `.cpp` files. Multiple lines are supported!\n")
+    md_lines.append("> 💡 **How to add notes & errors**:\n> - Add `// Note: Your text` to save takeaways.\n> - Add `// Wrong: [1,2,3]` or `// Fails: ...` to record tricky testcases.\n")
     md_lines.append("---\n")
     
+    # 預留全域進度條區塊位置
     global_progress_index = len(md_lines)
     md_lines.append("") 
     md_lines.append("---\n")
@@ -127,43 +190,51 @@ def generate_markdown_report():
         topic_progress = 0
         topic_table_lines = []
         
-        # 建立該主題的 Table Header (新增 Notes 欄位)
-        topic_table_lines.append("| Status | Problem | Notes / Takeaways |")
-        topic_table_lines.append("| :--- | :--- | :--- |")
+        # 建立該主題的 Table Header (新增 Difficulty 與 Wrong Testcases 欄位)
+        topic_table_lines.append("| Status | Difficulty | Problem | Notes | BUG |")
+        topic_table_lines.append("| :--- | :--- | :--- | :--- | :--- |")
         
         for problem in problems:
             total_problems += 1
-            file_name = f"{problem}.cpp"
+            diff = difficulty_map.get(problem, "Unknown")
             
+            # 統計難度總數
+            if diff in difficulty_stats:
+                difficulty_stats[diff]["total"] += 1
+                
+            file_name = f"{problem}.cpp"
             folder_path = os.path.join(base_dir, safe_folder_name, file_name)
             root_path = os.path.join(base_dir, file_name)
-            
             actual_path = folder_path if os.path.exists(folder_path) else (root_path if os.path.exists(root_path) else None)
+            
+            # 難度標籤色彩格式化
+            diff_badge = f"🟢 {diff}" if diff == "Easy" else (f"🟡 {diff}" if diff == "Medium" else f"🔴 {diff}")
             
             if actual_path:
                 topic_progress += 1
                 
-                # 取得狀態與筆記
-                status, notes = check_file_metadata(actual_path)
+                if diff in difficulty_stats:
+                    difficulty_stats[diff]["solved"] += 1
                 
-                # 將筆記串接成 HTML 換行格式 (如果沒有筆記則顯示短橫線)
-                if notes:
-                    notes_html = "<br>".join([f"💡 {note}" for note in notes])
-                else:
-                    notes_html = "-"
+                # 取得狀態、筆記與錯誤測資
+                status, notes, wrong_cases = check_file_metadata(actual_path)
+                
+                # 將筆記與錯誤測資串接成 HTML 換行格式
+                notes_html = "<br>".join([f"💡 {n}" for n in notes]) if notes else "-"
+                wrong_html = "<br>".join([f"`{w}`" for w in wrong_cases]) if wrong_cases else "-"
                 
                 # 填入表格
                 if status == "ACTIVE":
-                    topic_table_lines.append(f"| 🎯 **Active** | {problem} | {notes_html} |")
+                    topic_table_lines.append(f"| 🎯 **Active** | {diff_badge} | {problem} | {notes_html} | {wrong_html} |")
                 elif status == "REVIEW":
-                    topic_table_lines.append(f"| 🔄 **Review** | {problem} | {notes_html} |")
+                    topic_table_lines.append(f"| 🔄 **Review** | {diff_badge} | {problem} | {notes_html} | {wrong_html} |")
                 elif status == "STUCK":
-                    topic_table_lines.append(f"| 🛑 **Stuck** | {problem} | {notes_html} |")
+                    topic_table_lines.append(f"| 🛑 **Stuck** | {diff_badge} | {problem} | {notes_html} | {wrong_html} |")
                 else:
                     total_solved_or_attempted += 1
-                    topic_table_lines.append(f"| ✅ **Solved** | {problem} | {notes_html} |")
+                    topic_table_lines.append(f"| ✅ **Solved** | {diff_badge} | {problem} | {notes_html} | {wrong_html} |")
             else:
-                topic_table_lines.append(f"| ⬜ Pending | {problem} | - |")
+                topic_table_lines.append(f"| ⬜ Pending | {diff_badge} | {problem} | - | - |")
                 
         progress_bar = get_progress_bar(topic_progress, topic_total)
         percentage = int((topic_progress / topic_total) * 100) if topic_total > 0 else 0
@@ -173,18 +244,34 @@ def generate_markdown_report():
         md_lines.extend(topic_table_lines)
         md_lines.append("\n") 
         
-    # --- Global Progress ---
-    global_progress_bar = get_progress_bar(total_solved_or_attempted, total_problems, length=20)
-    global_percentage = int((total_solved_or_attempted / total_problems) * 100) if total_problems > 0 else 0
-    global_progress_text = f"## 🏆 Global Progress\n> **Overall:** {global_progress_bar} **{global_percentage}%** ({total_solved_or_attempted}/{total_problems})"
+    # --- Global Progress (處理字串組合與三個獨立進度條) ---
+    global_progress_text = ["## 🏆 Global Progress"]
     
-    md_lines[global_progress_index] = global_progress_text
+    # 總體進度
+    g_bar = get_progress_bar(total_solved_or_attempted, total_problems, length=20)
+    g_pct = int((total_solved_or_attempted / total_problems) * 100) if total_problems > 0 else 0
+    global_progress_text.append(f"> **Overall:** {g_bar} **{g_pct}%** ({total_solved_or_attempted}/{total_problems})")
+    global_progress_text.append(">") # 空白行區隔
+    
+    # 難度分級進度
+    for diff in ["Easy", "Medium", "Hard"]:
+        stats = difficulty_stats[diff]
+        d_bar = get_progress_bar(stats["solved"], stats["total"], length=15)
+        d_pct = int((stats["solved"] / stats["total"]) * 100) if stats["total"] > 0 else 0
+        
+        # 讓排版對齊 (補空白)
+        padding = " " * (6 - len(diff))
+        global_progress_text.append(f"> **{diff}:**{padding} {d_bar} **{d_pct}%** ({stats['solved']}/{stats['total']})")
+        global_progress_text.append(">") # 空白行區隔
+
+        
+    md_lines[global_progress_index] = "\n".join(global_progress_text)
     
     output_filename = "progress_report.md"
     with open(output_filename, "w", encoding="utf-8") as file:
         file.write("\n".join(md_lines))
         
-    print(f"✨ Report with Notes generated successfully! Saved to '{output_filename}'.")
+    print(f"✨ Report with Difficulty Bars & Testcase Tracking generated successfully! Saved to '{output_filename}'.")
 
 if __name__ == "__main__":
     generate_markdown_report()

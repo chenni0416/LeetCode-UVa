@@ -9,393 +9,402 @@
 | 🛑 **Stuck**  | `// Status: STUCK` | Couldn't solve, needs deep study. |
 | ⬜ **Pending**| *(No File)* | Not started yet. |
 
-> 💡 **How to add notes**: Add `// Note: Your text here` at the top of your `.cpp` files. Multiple lines are supported!
+> 💡 **How to add notes & errors**:
+> - Add `// Note: Your text` to save takeaways.
+> - Add `// Wrong: [1,2,3]` or `// Fails: ...` to record tricky testcases.
 
 ---
 
 ## 🏆 Global Progress
-> **Overall:** `[██████████░░░░░░░░░░]` **50%** (38/75)
+> **Overall:** `[████████████░░░░░░░░]` **58%** (44/75)
+>
+> **Easy:**   `[██████░░░░░░░░░]` **42%** (3/7)
+>
+> **Medium:** `[███████████░░░░]` **75%** (40/53)
+>
+> **Hard:**   `[███░░░░░░░░░░░░]` **20%** (3/15)
+>
 ---
 
 ### 📁 Arrays
-> **Progress:** `[███░░░░░░░]` **33%** (1/3)
+> **Progress:** `[███████░░░]` **66%** (2/3)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Majority Element | - |
-| ✅ **Solved** | Product of Array Except Self | - |
-| ⬜ Pending | First Missing Positive | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟢 Easy | Majority Element | - | - |
+| ✅ **Solved** | 🟡 Medium | Product of Array Except Self | - | - |
+| ✅ **Solved** | 🔴 Hard | First Missing Positive | - | `[1, 1]` |
 
 
 ### 📁 Strings
 > **Progress:** `[█████░░░░░]` **50%** (1/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Is Subsequence | - |
-| ✅ **Solved** | Reverse Words in a String | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟢 Easy | Is Subsequence | - | - |
+| ✅ **Solved** | 🟡 Medium | Reverse Words in a String | - | - |
 
 
 ### 📁 Bit Manipulation
 > **Progress:** `[█████░░░░░]` **50%** (1/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Counting Bits | - |
-| ✅ **Solved** | Single Number III | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟢 Easy | Counting Bits | - | - |
+| ✅ **Solved** | 🟡 Medium | Single Number III | - | `when XORall = INT_MIN -2^31 (negation of -2147483648) cannot be represented in type 'int' [1,1,0,-2147483648]` |
 
 
 ### 📁 Hash Tables
 > **Progress:** `[██████████]` **100%** (2/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Group Anagrams | - |
-| ✅ **Solved** | Longest Consecutive Sequence | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Group Anagrams | - | - |
+| ✅ **Solved** | 🟡 Medium | Longest Consecutive Sequence | - | - |
 
 
 ### 📁 Two Pointers
-> **Progress:** `[███████░░░]` **66%** (2/3)
+> **Progress:** `[██████████]` **100%** (3/3)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Container With Most Water | - |
-| 🛑 **Stuck** | 3Sum | 💡 So difficult |
-| ⬜ Pending | Trapping Rain Water | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Container With Most Water | - | - |
+| 🛑 **Stuck** | 🟡 Medium | 3Sum | 💡 So difficult | - |
+| ✅ **Solved** | 🔴 Hard | Trapping Rain Water | - | - |
 
 
 ### 📁 Prefix Sum
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Subarray Sum Equals K | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Subarray Sum Equals K | - | - |
 
 
 ### 📁 Sliding Window - Fixed Size
 > **Progress:** `[██████████]` **100%** (2/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Find All Anagrams in a String | - |
-| ✅ **Solved** | Permutation in String | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Find All Anagrams in a String | - | - |
+| ✅ **Solved** | 🟡 Medium | Permutation in String | - | - |
 
 
 ### 📁 Sliding Window - Dynamic Size
 > **Progress:** `[█████░░░░░]` **50%** (1/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Longest Substring Without Repeating Characters | - |
-| ⬜ Pending | Minimum Window Substring | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Longest Substring Without Repeating Characters | - | - |
+| ⬜ Pending | 🔴 Hard | Minimum Window Substring | - | - |
 
 
 ### 📁 Kadane's Algorithm
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Maximum Subarray | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Maximum Subarray | - | - |
 
 
 ### 📁 Matrix (2D Array)
 > **Progress:** `[██████████]` **100%** (2/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Spiral Matrix | - |
-| ✅ **Solved** | Rotate Image | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Spiral Matrix | - | - |
+| ✅ **Solved** | 🟡 Medium | Rotate Image | - | - |
 
 
 ### 📁 Linked List
 > **Progress:** `[██████████]` **100%** (3/3)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Remove Nth Node From End of List | - |
-| ✅ **Solved** | Swap Nodes in Pairs | - |
-| ✅ **Solved** | Add Two Numbers | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Remove Nth Node From End of List | - | - |
+| ✅ **Solved** | 🟡 Medium | Swap Nodes in Pairs | - | - |
+| ✅ **Solved** | 🟡 Medium | Add Two Numbers | - | - |
 
 
 ### 📁 LinkedList In-place Reversal
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Reverse Nodes in k-Group | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🔴 Hard | Reverse Nodes in k-Group | - | - |
 
 
 ### 📁 Fast and Slow Pointers
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Linked List Cycle II | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Linked List Cycle II | - | `[LOGIC]` |
 
 
 ### 📁 Stacks
 > **Progress:** `[█████░░░░░]` **50%** (1/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Valid Parentheses | - |
-| ✅ **Solved** | Min Stack | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟢 Easy | Valid Parentheses | - | - |
+| ✅ **Solved** | 🟡 Medium | Min Stack | - | - |
 
 
 ### 📁 Monotonic Stack
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
+> **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Largest Rectangle in Histogram | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🔴 Hard | Largest Rectangle in Histogram | - | - |
 
 
 ### 📁 Monotonic Queue
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Sliding Window Maximum | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🔴 Hard | Sliding Window Maximum | - | - |
 
 
 ### 📁 QuickSort - QuickSelect
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Sort Colors | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Sort Colors | - | - |
 
 
 ### 📁 Binary Search
 > **Progress:** `[███████░░░]` **66%** (2/3)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Find First and Last Position of Element in Sorted Array | - |
-| ✅ **Solved** | Search in Rotated Sorted Array | - |
-| ⬜ Pending | Median of Two Sorted Arrays | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Find First and Last Position of Element in Sorted Array | - | - |
+| ✅ **Solved** | 🟡 Medium | Search in Rotated Sorted Array | - | - |
+| ⬜ Pending | 🔴 Hard | Median of Two Sorted Arrays | - | - |
 
 
 ### 📁 Backtracking
 > **Progress:** `[██████████]` **100%** (2/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Permutations | - |
-| ✅ **Solved** | Subsets | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Permutations | - | - |
+| ✅ **Solved** | 🟡 Medium | Subsets | - | - |
 
 
 ### 📁 Tree Traversal - Level Order
 > **Progress:** `[█████░░░░░]` **50%** (1/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| 🎯 **Active** | Binary Tree Level Order Traversal | - |
-| ⬜ Pending | Binary Tree Right Side View | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| 🎯 **Active** | 🟡 Medium | Binary Tree Level Order Traversal | - | - |
+| ⬜ Pending | 🟡 Medium | Binary Tree Right Side View | - | - |
 
 
 ### 📁 Tree Traversal - Pre Order
 > **Progress:** `[███░░░░░░░]` **33%** (1/3)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Binary Tree Preorder Traversal | - |
-| ⬜ Pending | Path Sum III | - |
-| ⬜ Pending | Serialize and Deserialize Binary Tree | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟢 Easy | Binary Tree Preorder Traversal | - | - |
+| ⬜ Pending | 🟡 Medium | Path Sum III | - | - |
+| ⬜ Pending | 🔴 Hard | Serialize and Deserialize Binary Tree | - | - |
 
 
 ### 📁 Tree Traversal - In Order
 > **Progress:** `[███░░░░░░░]` **33%** (1/3)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Binary Tree Inorder Traversal | - |
-| ⬜ Pending | Validate Binary Search Tree | - |
-| ⬜ Pending | Kth Smallest Element in a BST | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟢 Easy | Binary Tree Inorder Traversal | - | - |
+| ⬜ Pending | 🟡 Medium | Validate Binary Search Tree | - | - |
+| ⬜ Pending | 🟡 Medium | Kth Smallest Element in a BST | - | - |
 
 
 ### 📁 Tree Traversal - Post-Order
 > **Progress:** `[███░░░░░░░]` **33%** (1/3)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Binary Tree Postorder Traversal | - |
-| ⬜ Pending | Lowest Common Ancestor of a Binary Tree | - |
-| ⬜ Pending | Binary Tree Maximum Path Sum | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟢 Easy | Binary Tree Postorder Traversal | - | - |
+| ⬜ Pending | 🟡 Medium | Lowest Common Ancestor of a Binary Tree | - | - |
+| ⬜ Pending | 🔴 Hard | Binary Tree Maximum Path Sum | - | - |
 
 
 ### 📁 BST - Ordered Set
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | My Calendar I | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟡 Medium | My Calendar I | - | - |
 
 
 ### 📁 Tries
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/2)
+> **Progress:** `[█████░░░░░]` **50%** (1/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Implement Trie (Prefix Tree) | - |
-| ⬜ Pending | Word Search II | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Implement Trie (Prefix Tree) | - | `not add node-> alter this->children` |
+| ⬜ Pending | 🔴 Hard | Word Search II | - | - |
 
 
 ### 📁 Two Heaps
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Find Median from Data Stream | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🔴 Hard | Find Median from Data Stream | - | - |
 
 
 ### 📁 Top K Elements
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
+> **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Top K Frequent Elements | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Top K Frequent Elements | - | - |
 
 
 ### 📁 Intervals
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Merge Intervals | - |
-| ⬜ Pending | Non-overlapping Intervals | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟡 Medium | Merge Intervals | - | - |
+| ⬜ Pending | 🟡 Medium | Non-overlapping Intervals | - | - |
 
 
 ### 📁 K-Way Merge
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Merge k Sorted Lists | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🔴 Hard | Merge k Sorted Lists | - | - |
 
 
 ### 📁 Data Structure Design
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | LRU Cache | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟡 Medium | LRU Cache | - | - |
 
 
 ### 📁 Greedy
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Jump Game II | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟡 Medium | Jump Game II | - | - |
 
 
 ### 📁 Depth First Search (DFS)
 > **Progress:** `[██████████]` **100%** (3/3)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Number of Islands | - |
-| ✅ **Solved** | Clone Graph | - |
-| ✅ **Solved** | Is Graph Bipartite | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Number of Islands | - | - |
+| ✅ **Solved** | 🟡 Medium | Clone Graph | - | - |
+| ✅ **Solved** | 🟡 Medium | Is Graph Bipartite | - | `contain disconnected graph/ first [[], [2,3]...]` |
 
 
 ### 📁 Breadth First Search (BFS)
 > **Progress:** `[█████░░░░░]` **50%** (1/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Rotting Oranges | - |
-| ⬜ Pending | Word Ladder | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Rotting Oranges | - | `[[2,1,1],[1,1,1],[1,1,1]]` |
+| ⬜ Pending | 🔴 Hard | Word Ladder | - | - |
 
 
 ### 📁 Topological Sort
-> **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
+> **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Course Schedule II | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Course Schedule II | - | - |
 
 
 ### 📁 Union Find
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Number of Provinces | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟡 Medium | Number of Provinces | - | - |
 
 
 ### 📁 Minimum Spanning Tree
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Min Cost to Connect All Points | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Min Cost to Connect All Points | - | - |
 
 
 ### 📁 Shortest Path
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Cheapest Flights Within K Stops | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Cheapest Flights Within K Stops | - | - |
 
 
 ### 📁 1-D DP
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | House Robber II | 💡 My solution is slower, but I use the same algo as faster one. |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | House Robber II | 💡 My solution is slower, but I use the same algo as faster one. | - |
 
 
 ### 📁 0-1 Knapsack
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Partition Equal Subset Sum | 💡 DP!!! I thougt backtracking at first time!<br>💡 [BUG] [1,2,5], expected false, got true [WHY] need to add prev to prevent from using the same data<br>💡 I need to add program to check my answer! |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Partition Equal Subset Sum | 💡 DP!!! I thougt backtracking at first time!<br>💡 [BUG] [1,2,5], expected false, got true [WHY] need to add prev to prevent from using the same data<br>💡 I need to add program to check my answer! | `[BUG] [1,2,5], expected false, got true [WHY] need to add prev to prevent from using the same data` |
 
 
 ### 📁 Unbounded Knapsack
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Coin Change | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Coin Change | - | - |
 
 
 ### 📁 Longest Increasing Subsequence (LIS)
 > **Progress:** `[██████████]` **100%** (1/1)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Longest Increasing Subsequence | 💡 slow but dp |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Longest Increasing Subsequence | 💡 slow but dp | - |
 
 
 ### 📁 2D Grid DP
 > **Progress:** `[█████░░░░░]` **50%** (1/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Minimum Path Sum | 💡 [[1], [2]] can not reach from left; only from top; |
-| ⬜ Pending | Longest Increasing Path in a Matrix | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Minimum Path Sum | 💡 [[1], [2]] can not reach from left; only from top; | - |
+| ⬜ Pending | 🔴 Hard | Longest Increasing Path in a Matrix | - | - |
 
 
 ### 📁 String DP
 > **Progress:** `[█████░░░░░]` **50%** (1/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ✅ **Solved** | Longest Common Subsequence | - |
-| ⬜ Pending | Word Break | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ✅ **Solved** | 🟡 Medium | Longest Common Subsequence | - | - |
+| ⬜ Pending | 🟡 Medium | Word Break | - | - |
 
 
 ### 📁 Maths - Geometry
 > **Progress:** `[░░░░░░░░░░]` **0%** (0/2)
 
-| Status | Problem | Notes / Takeaways |
-| :--- | :--- | :--- |
-| ⬜ Pending | Reverse Integer | - |
-| ⬜ Pending | Max Points on a Line | - |
+| Status | Difficulty | Problem | Notes | BUG |
+| :--- | :--- | :--- | :--- | :--- |
+| ⬜ Pending | 🟡 Medium | Reverse Integer | - | - |
+| ⬜ Pending | 🔴 Hard | Max Points on a Line | - | - |
 
